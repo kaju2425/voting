@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Online voting system</title>
+    <link rel="stylesheet" href="css/instylesheet.css">
+</head>
+
+<body>
+    <center>
+        <style>
+            .container {
+                text-align: center;
+                width: 700px;
+                height: 500;
+                margin: 0 auto;
+                align-items: center;
+                padding: 30px;
+                animation: slideIn 1s ease-in-out;
+            }
+            
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(-100%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </center>
+    <center>
+        <div class="container">
+
+            <div id="headsectoin">
+
+                <h1> Online Voting System</h1>
+
+                <hr>
+            </div>
+            <div id="bodysectoin">
+                <form action="api/login.php" method="post">
+
+                    <h2>Login</h2>
+                    <input type="number" name="mobile" placeholder="Enter mobile "><br><br>
+
+                    <input type="password " name="password" placeholder="Enter password "><br><br>
+                    <select id="dropbox" name="role">
+        
+        <option value="1 ">Voter</option>
+        
+        <option value="2 ">Group</option>
+        
+        </select><br><br>
+
+                    <button id="loginbtn" type="submit">Login</button><br><br> new user?
+                    <a href=" http://localhost/online_voting/routes/register.html"> register here</a>
+
+                </form>
+
+            </div>
+
+        </div>
+    </center>
+</body>
+
+</html>
